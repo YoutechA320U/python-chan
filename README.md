@@ -7,12 +7,13 @@
 
 ---  
 
-## 📖 目次
+## 目次
 
 1. [概要](#概要)  
 2. [ディレクトリ構成](#ディレクトリ構成)  
 3. [使い方](#使い方)  
 4. [設定項目の説明](#設定項目の説明)  
+5. [ライセンス](#ライセンス)  
 
 ---  
 
@@ -119,3 +120,8 @@ python demo.py
 | `PREPHONEMELENGTH` | VOICEVOXの開始無音 | `1.0` |
 | `POSTPHONEMELENGTH` | VOICEVOXの終了無音 | `0.1` |
 | `PAUSELENGTHSCALE` | VOICEVOXの間の長さ | `1.0` |
+---  
+
+## ライセンス
+
+ライセンスは[Apache-2.0 license](https://github.com/YoutechA320U/python-chan/blob/master/LICENSE)です。
