@@ -1,4 +1,4 @@
-# python‑chan  
+# python‑chan  (ﾊﾟｲｿﾝﾁｬﾝ)
 
 ![Picture](https://github.com/YoutechA320U/python-chan/blob/master/python-chan.gif "イメージ") 
 
@@ -37,7 +37,8 @@
 ```
 python-chan/
 │
-├─ python-chan.py               # エントリポイント (README のコード本体)
+├─ python-chan.py               # ﾊﾟｲｿﾝﾁｬﾝ本体
+├─ demo.py               # 動作確認用デモ
 ├─ message.txt           # (自動生成/削除) 監視対象テキストファイル
 │
 ├─ img_data/             # 画像リソース
@@ -66,6 +67,7 @@ python python-chan.py
 ```
 
 - 起動直後はウィンドウにベース画像だけが表示されます。  
+- この際`message.txt`がある場合は削除されます。
 - 2️⃣に進む前にVOICEVOXを起動しておいてください。
 
 ### 2️⃣ テキストを送信
@@ -86,14 +88,14 @@ python demo.py
 
 ### 4️⃣ ウィンドウのリサイズ
 
-- 右下のサイズハンドルをドラッグするとウィンドウが拡大／縮小します。  
-- 画像はスムーズにスケーリングされ、アスペクト比は保持されます。
+- ウィンドウは拡大／縮小できます。  
+- ウインドウサイズに合わせてﾊﾟｲｿﾝﾁｬﾝもリサイズされます。
 
 ---  
 
 ## 設定項目の説明
 
-コード冒頭の定数部を直接編集するだけでカスタマイズできます。
+コード冒頭の定数部を直接編集するとカスタマイズできます。
 
 | 定数 | 説明 | 例 |
 |------|------|----|
@@ -117,4 +119,3 @@ python demo.py
 | `PREPHONEMELENGTH` | VOICEVOXの開始無音 | `1.0` |
 | `POSTPHONEMELENGTH` | VOICEVOXの終了無音 | `0.1` |
 | `PAUSELENGTHSCALE` | VOICEVOXの間の長さ | `1.0` |
----  
